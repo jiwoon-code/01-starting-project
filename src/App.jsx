@@ -47,7 +47,7 @@ function App() {
                         />
                         <CoreConcept />
                         <CoreConcept />
-                        <CoreConcept />
+                        
                     </ul>
                 </section>
             </main>
