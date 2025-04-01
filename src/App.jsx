@@ -4,6 +4,10 @@ import CoreConcept from "./components/CoreConcept";
 import TabButton from "./components/TabButton";
 
 function App() {
+    function handleSelect(selectedButton) {
+        console.log(selectedButton)
+    }
+
     return (
         <div>
             <Header />
@@ -24,11 +28,12 @@ function App() {
                 <section id="examples">
                     <h2>Examples</h2>
                     <menu>
-                        <TabButton>Components</TabButton>
-                        <TabButton>JSX</TabButton>
-                        <TabButton>Props</TabButton>
-                        <TabButton>State</TabButton>
+                        <TabButton onClick={() => handleSelect("components")}>Components</TabButton>
+                        <TabButton onClick={() => handleSelect("JSX")}>JSX</TabButton>
+                        <TabButton onClick={() => handleSelect("Props")}>Props</TabButton>
+                        <TabButton onClick={() => handleSelect("State")}>State</TabButton>
                     </menu>
+                    Dynamic Content
                 </section>
             </main>
         </div>
