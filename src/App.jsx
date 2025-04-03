@@ -13,8 +13,6 @@ function App() {
     setSelectedTopic(selectedButton);
   }
 
-  console.log("APP COMPONENT EXECUTING");
-
   let tabContent = <p>Please select your topic</p>;
   if (selectedTopic) {
     tabContent = (
